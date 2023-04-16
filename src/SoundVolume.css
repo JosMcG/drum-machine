@@ -1,0 +1,36 @@
+#vol-controls {
+    margin: 10px;
+    padding: 20px;
+    max-height: 10px;
+}
+
+#volume-slider {
+    -webkit-appearance: none;
+    background-color: #FFFF00;
+    height: 8px;
+    border-radius: 5px;
+    border: 1px solid #d5d505;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: slategray;
+    border: 1px solid rgb(84, 85, 85);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#volume {
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: small;
+}

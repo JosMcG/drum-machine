@@ -1,0 +1,108 @@
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}*/
+
+header {
+  background-color: black;
+  color: white;
+  height: 100px;
+  border-bottom: 1px solid black;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+h1 {
+  font-size: 50px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 0px;
+  margin-left: 15%;
+  padding-top: 20px;
+  -webkit-text-stroke: 1px #00FFD1;
+}
+
+img {
+  position: relative;
+  float: left;
+  height: 75px;
+  border-radius: 35%;
+  margin-left: 20px;
+  margin-top: 50px;
+  border: 2px solid rgb(7, 145, 224);
+  box-shadow: 3px 3px 3px  rgba(0,0,0,.2);
+}
+
+#drum-machine {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 350px 170px;
+  width: 520px;
+  border-radius: 15px;
+  border-bottom: 3px solid rgb(130, 130, 130);
+  border-right: 3px solid rgb(130, 130, 130);
+  border-top: 3px solid rgb(225, 225, 225);
+  border-left: 3px solid rgb(215, 215, 215);
+  background-image: linear-gradient(#00FFD1, #31C6D4, #FFFF00, #FF1E1E);
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  margin: 10px;
+  border-bottom: 1px solid #dfe2e5;
+  border-right: 1px solid #dfe2e5;
+  border-top: 1px solid rgb(159, 159, 159);
+  border-left: 1px solid rgb(159, 159, 159);
+  box-shadow: inset 0 -1px 0 0 #AFBCC6;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: x-small;
+}

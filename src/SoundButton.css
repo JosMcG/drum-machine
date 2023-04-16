@@ -1,0 +1,8 @@
+.drum-pad {
+    background-color: #31C6D4;
+    width: 75px;
+    height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
