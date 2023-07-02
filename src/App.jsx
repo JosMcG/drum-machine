@@ -1,6 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import SoundButtons from './SoundButtons';
 import SoundVolume from './SoundVolume';
 import {useState} from 'react';
@@ -30,7 +27,7 @@ const App = () => {
           <div id="controls">
             <Power power={pow} setPower={setPow} func={getPowLabel}/>
             <SoundVolume volume={vol} setVolume={setVol}/>
-            <SoundDisplay soundLabel={soundName}/>
+            <SoundDisplay id="display" soundLabel={soundName}/>
           </div>
       </div>
       <footer><a href="https://www.freepik.com/free-vector/banner-music-notes-colourful-white-background_27288353.htm#query=music%20notes%20color&position=2&from_view=keyword&track=ais">Image by brgfx</a> on Freepik</footer>

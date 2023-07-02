@@ -5,7 +5,7 @@ import './SoundButtons.css';
 
 function SoundButtons (props) {
     return (
-        <div id="display">
+        <div id="sound-buttons">
             {SoundItems.map(s => <SoundButton volume={props.volume} 
                                               power={props.power} 
                                               key={s.key} 

@@ -3,7 +3,7 @@ import './SoundDisplay.css'
 function SoundDisplay(props) {
 
     return (
-        <div id="sound-name">{props.soundLabel}</div>
+        <div id="display">{props.soundLabel}</div>
     );
 }
 export default SoundDisplay

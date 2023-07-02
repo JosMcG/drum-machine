@@ -9,7 +9,7 @@ const SoundButton = (props) => {
         //use javascript Audio object rather than getElementById to eliminate race condition (sound hang)
         //if using getElementById, you need to reload with every button click
         //js Audio creates a new object with every click
-        let x = new Audio(s.sound);
+        let x = document.getElementById(s.key);      //change back to new Audio(s.sound) for better functionality on repeat clicks
         x.volume = props.volume/100;  //Audio needs the value to be between 0-1
         x.muted = !props.power;
         x.play();
@@ -22,9 +22,9 @@ const SoundButton = (props) => {
     
     return (
         <span>
-            <audio className="clip" id={s.key} src={s.sound}/>
             <button className="drum-pad" id={s.id} onClick={makeSound}>
                 {s.key}
+                <audio className="clip" id={s.key} src={s.sound} preload="auto"/>
             </button>
         </span>
     );
