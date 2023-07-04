@@ -12,6 +12,7 @@ const SoundButton = (props) => {
         let x = document.getElementById(s.key);      //change back to new Audio(s.sound) for better functionality on repeat clicks
         x.volume = props.volume/100;  //Audio needs the value to be between 0-1
         x.muted = !props.power;
+        x.load();             //this isn't needed if change above x variable assignment to new Audio()
         x.play();
         props.setSoundLabel(s.id);
         
@@ -24,7 +25,7 @@ const SoundButton = (props) => {
         <span>
             <button className="drum-pad" id={s.id} onClick={makeSound}>
                 {s.key}
-                <audio className="clip" id={s.key} src={s.sound} preload="auto"/>
+                <audio className="clip" id={s.key} src={s.sound} />
             </button>
         </span>
     );
